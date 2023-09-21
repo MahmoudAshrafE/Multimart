@@ -1,0 +1,77 @@
+.footer{
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background: var(--primary-color);
+    .footer_text{
+        line-height: 30px;
+        color: #c5c5c5;
+        font-size: 0.9rem;
+    }
+    .footer_links{
+        .links_title{
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        ul{
+            li{
+                background: transparent !important;
+                a{
+                color: #c5c5c5;
+                }
+            }
+        }
+    }
+    .footer_contact{
+        li{
+            color: #c5c5c5;
+            span{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .footer_copyright{
+        color:#c5c5c5;
+        font-size: 0.9rem;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .install_app{
+        .googlePlay{
+            width: 250px;
+            height: 150px;
+            cursor: pointer;
+        }
+        }
+}
+
+@media only screen and (max-width:768px) {
+    .footer{
+        .footer_text{
+            font-size: 0.8rem;
+        }
+        .footer_links{
+            .links_title{
+                font-size: 1rem;
+            }
+        }
+        .footer_contact{
+            li{
+                span{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .footer_copyright{
+            font-size: 0.8rem;
+        }
+        .install_app{
+            .googlePlay{
+                width: 160px;
+                height: 100px;
+                cursor: pointer;
+            }
+            }
+    }
+}

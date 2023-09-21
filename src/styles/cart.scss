@@ -1,0 +1,76 @@
+.table{
+    th{
+        color: var(--primary-color);
+    }
+    tr{
+    border-top: 1px solid #dddddd;
+        td{
+            color: var(--primary-color);
+            img{
+                width: 90px ;
+                height: 80px;
+                object-fit: cover;
+            }
+            i{
+                cursor: pointer;
+                font-size: 1.3rem;
+                color: rgb(199, 6, 6) !important;
+            }
+        }
+    }
+    .productDeleteImg{
+        display: none;
+    }
+}
+.cartEmpty{
+    width: 340px;
+}
+@media only screen and (max-width:786px){
+    .cartEmpty{
+        width: 230px !important;
+    }
+}
+@media only screen and (max-width:576px){
+    .cartEmpty{
+        width: 150px !important;
+    }
+    .productName{
+        font-size: 0.6rem !important;
+    }
+    td{
+        color: var(--primary-color);
+        position: relative;
+        img{
+            width: 40px !important;
+            height: 40px !important;
+        }
+    }
+    .productPrice{
+        font-size: 0.6rem !important;
+    }
+    .productQty{
+        font-size: 0.6rem !important;
+    }
+    thead{
+        th{
+            font-size: 0.6rem;
+        }
+    }
+    .ri-close-circle-fill{
+        font-size: 1rem !important;
+    }
+    .productDeleteTable{
+        display: none;
+    }
+    .productDeleteImg{
+        display: block !important;
+        .deleteInImg{
+            position: absolute;
+            top: -28px;
+            left: -20px;
+        }
+    }
+    .productDelete{
+        display: none;
+    }
+}

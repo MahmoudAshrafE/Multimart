@@ -1,0 +1,14 @@
+@media only screen and (max-width: 576px) {
+  .common {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+  .readAgree {
+    font-size: 0.9rem !important;
+  }
+  .readAgree #flexCheckDefault {
+    font-size: 0.9rem !important;
+  }
+}/*# sourceMappingURL=login.css.map */

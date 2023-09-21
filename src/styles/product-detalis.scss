@@ -1,0 +1,107 @@
+.product_info{
+    margin-top: 50px;
+    .product_name{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .product_rating{
+        span{
+            i{
+                color: coral;
+                font-size: 1.3rem;
+            }
+        }
+        .avg_rating{
+            span{
+                color: coral;
+                font-weight: 500;
+            }
+        }
+    }
+    .price{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .short_desc{
+        margin-top: 20px;
+    }
+}
+.tap_wrapper{
+
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1rem;
+    h6{
+        cursor: pointer;
+    }
+}
+.active_tap{
+    font-weight: 700;
+}
+.tab_content{
+    p{
+        line-height: 30px;
+    }
+}
+.review_wrapper{
+    ul{
+        li{
+    span{
+        color: coral;
+        font-weight: 500;
+    }
+    p{
+        margin: 11px;
+    }
+}
+}
+.review_form{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    h4{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+}
+.form_group{
+    margin-top: 20px;
+    input,textarea{
+        width: 100%;
+        border: 1px solid var(--primary-color);
+        border-radius: 5px;
+        padding: 8px 20px;
+        &:focus{
+            outline: none !important;
+        }
+    }
+    .star{
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        color: coral;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+}
+.another_likes{
+    .related_title{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .product_info{
+        h2{
+            font-size: 1.2rem;
+        }
+        }
+        .group_rating{
+            column-gap: 0.5rem !important;
+        }
+    }

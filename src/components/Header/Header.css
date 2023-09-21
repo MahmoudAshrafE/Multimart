@@ -1,0 +1,175 @@
+header.header {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+}
+header.header .nav__Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header.header .nav__Wrapper .logo {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+header.header .nav__Wrapper .logo img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 13px;
+}
+header.header .nav__Wrapper .logo h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+header.header .nav__Wrapper .navigation .menu {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 2.7rem;
+       column-gap: 2.7rem;
+  margin-bottom: 0;
+}
+header.header .nav__Wrapper .navigation .menu .nav__item a {
+  color: var(--primary-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+header.header .nav__Wrapper .nav__icons {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+header.header .nav__Wrapper .nav__icons span i {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+header.header .nav__Wrapper .nav__icons span img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+header.header .nav__Wrapper .nav__icons .fav__icon, header.header .nav__Wrapper .nav__icons .cart__icon {
+  position: relative;
+}
+header.header .nav__Wrapper .nav__icons .fav__icon .badge, header.header .nav__Wrapper .nav__icons .cart__icon .badge {
+  position: absolute;
+  top: 25%;
+  right: -8%;
+  width: 15px;
+  height: 15px;
+  content: "";
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-weight: 600;
+  z-index: 10;
+  cursor: pointer;
+}
+header.header .nav__Wrapper .mob__menu {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  display: none;
+}
+
+.nav__active {
+  font-weight: 700 !important;
+}
+
+.Sticky_header {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-shadow: 3px 3px 8px -3px #ddd;
+  background: #fff;
+}
+
+span {
+  position: relative;
+}
+span .profile_display {
+  position: absolute;
+  background-color: #fff;
+  width: 65px;
+  height: 50px;
+  border-radius: 5px;
+  top: 50px;
+  right: -30px;
+  display: none;
+}
+span a {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span a .ri-login-box-line {
+  font-size: 0.9rem !important;
+}
+span .active__profile {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100% !important;
+    height: 60px !important;
+    line-height: 60px !important;
+  }
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 5, 0.4235294118);
+    z-index: 999;
+    display: none;
+  }
+  .navigation .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background: #d6e5fb;
+    z-index: 9999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .active__menu {
+    display: block;
+  }
+  .mob__menu {
+    display: block !important;
+  }
+  .mob__menu i {
+    font-size: 1.1rem !important;
+  }
+  .logo img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .logo h1 {
+    font-size: 1rem !important;
+  }
+  .fav__icon i, .cart__icon i {
+    font-size: 1.2rem !important;
+  }
+  .nav__icons img {
+    width: 1.4rem !important;
+    height: 1.4rem !important;
+  }
+}/*# sourceMappingURL=Header.css.map */

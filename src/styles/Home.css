@@ -1,0 +1,92 @@
+.hero__section {
+  background: var(--hero-bg);
+}
+.hero__section .hero__content {
+  padding-top: 45px;
+}
+.hero__section .hero__content h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.hero__section .hero__content p {
+  color: var(--primary-color);
+  line-height: 28px;
+}
+.hero__section .hero__content p:nth-child(1) {
+  font-weight: 500;
+}
+
+.buy__btn {
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+.buy__btn a:hover {
+  color: var(--hero-bg);
+}
+
+.store__btn {
+  background: #fff;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.store__btn a:hover {
+  color: rgb(24, 30, 118);
+}
+
+.timer__count {
+  background: var(--primary-color);
+  height: 300px;
+}
+.timer__count img {
+  width: 70% !important;
+  height: 70% !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media only screen and (max-width: 992px) {
+  .hero__content h2 {
+    font-size: 2rem !important;
+  }
+  .timer__count .counter_img {
+    display: none !important;
+  }
+  .timer__count .clock__title {
+    text-align: center;
+  }
+  .timer__count .clock__title h4 {
+    font-size: 0.9rem !important;
+  }
+  .timer__count .clock__title h3 {
+    font-size: 1rem !important;
+  }
+  .timer__count .count__down {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero__content h2 {
+    font-size: 1.5rem !important;
+  }
+  .hero__content p {
+    font-size: 0.9rem !important;
+  }
+  .buy__btn a {
+    font-size: 0.9rem !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero__content {
+    padding-top: 0 !important;
+    margin-bottom: 40px !important;
+  }
+}/*# sourceMappingURL=Home.css.map */
